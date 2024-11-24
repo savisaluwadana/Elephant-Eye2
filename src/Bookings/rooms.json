@@ -1,0 +1,87 @@
+{
+    "rooms": [
+      {
+        "type": "Deluxe Double Room",
+        "description": [
+          "Spacious room with a queen-sized bed.",
+          "Modern amenities for a comfortable stay."
+        ],
+        "maxPersonCount": 2,
+        "prices": {
+          "roomOnly": {
+            "1_Person": 27,
+            "2_Person": 36
+          },
+          "bedAndBreakfast": {
+            "1_Person": 36,
+            "2_Person": 54
+          }
+        },
+        "availability": 8
+      },
+      {
+        "type": "Deluxe Twin Room",
+        "description": [
+          "A cozy twin room with two single beds.",
+          "Ideal for travelers seeking convenience."
+        ],
+        "maxPersonCount": 2,
+        "prices": {
+          "roomOnly": {
+            "1_Person": 27,
+            "2_Person": 36
+          },
+          "bedAndBreakfast": {
+            "1_Person": 36,
+            "2_Person": 54
+          }
+        },
+        "availability": 2
+      },
+      {
+        "type": "Deluxe Triple Room",
+        "description": [
+          "Perfect for small groups.",
+          "Features three single beds for flexibility."
+        ],
+        "maxPersonCount": 3,
+        "prices": {
+          "roomOnly": {
+            "1_Person": 38,
+            "2_Person": 47,
+            "3_Person": 54
+          },
+          "bedAndBreakfast": {
+            "1_Person": 65,
+            "2_Person": 73,
+            "3_Person": 81
+          }
+        },
+        "availability": 3
+      },
+      {
+        "type": "Deluxe Family Room",
+        "description": [
+          "Ideal for families, with a king-sized bed.",
+          "Extra space for relaxation and comfort."
+        ],
+        "maxPersonCount": 4,
+        "prices": {
+          "roomOnly": {
+            "1_Person": 50,
+            "2_Person": 58,
+            "3_Person": 65,
+            "4_Person": 72
+          },
+          "bedAndBreakfast": {
+            "1_Person": 87,
+            "2_Person": 100,
+            "3_Person": 112,
+            "4_Person": 125
+          }
+        },
+        "availability": 2
+      }
+    ]
+  }
+  
