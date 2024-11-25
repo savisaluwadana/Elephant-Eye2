@@ -35,4 +35,3 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: elephant-eye
           directory: dist
-         comando: pages deploy website/build --project-name elephant-eye 
