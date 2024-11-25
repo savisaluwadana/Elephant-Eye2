@@ -3,9 +3,7 @@ name: Deploy to Cloudflare Pages
 on:
   push:
     branches: [main]
-    paths:
-    - ".github/workflows/elephant-eye.yml"
-    -"elephant-eye2/**"
+   
     
     
 
@@ -30,14 +28,16 @@ jobs:
         run: npm install
 
       - name: Build
-        working-directory:elephant-eye2
+       
         run: npm run build
 
       - name: Install Wrangler CLI
         run: npm install -g wrangler
 
-      - name: Deploy 
-        run: wrangler pages deploy ./build --project-name=elephant-eye2 --branch main
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      - name: Deploy via CloudFlare Workers
+      env:
+        CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+        CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+      run: |
+        npm i @cloudflare/wrangler -g
+        wrangler publish
