@@ -28,9 +28,9 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name:Deploy
+      - name: Deploy
         uses: cloudflare/wrangler-actions@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command:pages deploy elephant-eye/build --projectname-elephant-eye
+          command: pages deploy elephant-eye/build --project-name=elephant-eye
